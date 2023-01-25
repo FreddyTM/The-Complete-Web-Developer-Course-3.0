@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Hello World!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
@@ -48,10 +51,16 @@
       </tbody>
     </table>
     <hr />
-    <p>Want to know more?</p>
-    <p>
-      <a href="https://space-facts.com/earth/?"><input type="submit" value="Click here" /></a>
-    </p>
+    <form action="https://space-facts.com/earth/">
+      <p>Want to know more?</p>
+      <p><input type="submit" value="Click here" /></p>
+    </form>
+    <!-- Alternative way
+      <p>Want to know more?</p>
+      <p>
+        <a href="https://space-facts.com/earth/?"><input type="submit" value="Click here" /></a>
+      </p>
+    -->
     <br />
     <video width="640" height="480" controls>
       <source src="earth.mp4" type="video/mp4" />
