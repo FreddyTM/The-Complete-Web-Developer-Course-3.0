@@ -25,16 +25,22 @@
       .underlined {
         text-decoration: underline;
       }
+      .clear-float {
+        clear: both;
+      }
       #green {
         color: green;
       }
       #first-section {
         color: blue;
         background-color: #ffa07a;
-        width: 50%;
+        width: 200px;
+        float: left;
       }
       #second-section {
         background-color: #d6eaf8;
+        width: 200px;
+        float: right;
       }
     </style>
   </head>
@@ -49,5 +55,8 @@
       <p id="green">This is some more text. <span class="underlined">And this text is underlined</span></p>
       <h1 class="red">CSS is cool</h1>
     </div>
+    <p>This paragraph is not floated, it's inserted in the flow of the page</p>
+    <div class="clear-float"></div>
+    <p>This paragraph is not floated either, but it's not affected by previous floats</p>
   </body>
 </html>
