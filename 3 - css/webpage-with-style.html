@@ -19,6 +19,50 @@
       .red {
         color: red;
       }
+      .yellow {
+        background-color: yellow;
+        width: 200px;
+        position: relative;
+        left: 100px;
+        top: 100px;
+        z-index: 2;
+        opacity: 0.7;
+      }
+      .pink {
+        background-color: pink;
+        width: 200px;
+        position: relative;
+        left: 100px;
+        top: -100px;
+      }
+      .grey {
+        background-color: grey;
+        width: 200px;
+        position: relative;
+        left: 250px;
+        top: -65px;
+        z-index: 1;
+      }
+      .light-blue {
+        background-color: rgb(76, 189, 226);
+        width: 200px;
+        position: absolute;
+        left: 350px;
+        top: 450px;
+      }
+      .purple {
+        background-color: rgb(226, 76, 218);
+        width: 200px;
+        position: fixed;
+        left: 650px;
+        top: 200px;
+      }
+      .lime {
+        background-color: lime;
+        width: 400px;
+        position: sticky;
+        top: 0;
+      }
       .large {
         font-size: 200%;
       }
@@ -58,5 +102,39 @@
     <p>This paragraph is not floated, it's inserted in the flow of the page</p>
     <div class="clear-float"></div>
     <p>This paragraph is not floated either, but it's not affected by previous floats</p>
+    <hr />
+    <div class="yellow">
+      <p>First sentence</p>
+      <p>I love internal CSS</p>
+    </div>
+    <div class="pink">
+      <p>This is some more text. <span class="underlined">And this text is underlined</span></p>
+      <h1 class="red">CSS is cool</h1>
+    </div>
+    <div class="grey">
+      <p>Another sentence here</p>
+      <p>One more sentence there</p>
+    </div>
+    <hr />
+    <!--This div will have absolute position, and then out of the flow of the page
+    Its position is relative to the top left of the page, but it will move down if
+    the page is scrolled up or down-->
+    <div class="light-blue">
+      <p>One more thing to say</p>
+      <p>Or maybe two</p>
+    </div>
+    <!--If one element has a fixed position, it can be positioned the same way as if
+    it had an absolte position, but it won't move if the page is scrolled up or down-->
+    <div class="purple">
+      <p>This is another text</p>
+      <p>we need many words in this page</p>
+    </div>
+    <!--If one element has a sticky position, you can give it an offset from the top of
+    the page and it will scroll up till it reaches the top of the page. Then it will stick
+    there. If the page it's scrolled down again it will go down until it gets to the offset-->
+    <div class="lime">
+      <p>This is a sticky text</p>
+      <p>It will move up to the offset</p>
+    </div>
   </body>
 </html>
