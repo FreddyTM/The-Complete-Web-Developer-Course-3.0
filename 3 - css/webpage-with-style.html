@@ -16,8 +16,23 @@
         color: pink;
         font-size: 150%;
       } */
-      .red {
-        color: red;
+      #square-red {
+        background-color: red;
+      }
+      #square-green {
+        background-color: green;
+      }
+      #square-blue {
+        background-color: blue;
+      }
+      .square {
+        width: 200px;
+        height: 200px;
+        margin: 40px;
+        float: left;
+      }
+      .orange {
+        color: orange;
       }
       .yellow {
         background-color: yellow;
@@ -111,7 +126,7 @@
     </div>
     <div id="second-section">
       <p id="green">This is some more text. <span class="underlined">And this text is underlined</span></p>
-      <h1 class="red">CSS is cool</h1>
+      <h1 class="orange">CSS is cool</h1>
     </div>
     <p>This paragraph is not floated, it's inserted in the flow of the page</p>
     <div class="clear-float"></div>
@@ -123,7 +138,7 @@
     </div>
     <div class="pink">
       <p>This is some more text. <span class="underlined">And this text is underlined</span></p>
-      <h1 class="red">CSS is cool</h1>
+      <h1 class="orange">CSS is cool</h1>
     </div>
     <div class="grey">
       <p>Another sentence here</p>
@@ -166,5 +181,10 @@
     </div>
     <div class="clear-float"></div>
     <hr />
+    <br />
+    <br />
+    <div id="square-red" class="square"></div>
+    <div id="square-green" class="square"></div>
+    <div id="square-blue" class="square"></div>
   </body>
 </html>
