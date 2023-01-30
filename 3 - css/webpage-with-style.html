@@ -63,6 +63,20 @@
         position: sticky;
         top: 0;
       }
+      .brown {
+        background-color: brown;
+        width: 200px;
+        margin: 100px 50px 20px 40px;
+        float: left;
+      }
+      .chocolate {
+        background-color: chocolate;
+        width: 300px;
+        margin: 50px 20px;
+        padding: 10px 20px 15px 30px;
+        box-sizing: border-box;
+        float: left;
+      }
       .large {
         font-size: 200%;
       }
@@ -136,5 +150,21 @@
       <p>This is a sticky text</p>
       <p>It will move up to the offset</p>
     </div>
+    <hr />
+    <div class="brown">
+      <p>Text with margins</p>
+      <p>Different effect than position</p>
+    </div>
+    <!--padding adds to the total width of the element. To prevent it, we should use
+    box-sizing: border-box;-->
+    <!--The body and the paragraphs have default margin & padding, so the elements don't
+    appear stuck together in the page. To prevent it, we must add a css rule for them with
+    margin & padding values set to 0-->
+    <div class="chocolate">
+      <p>Text with padding</p>
+      <p>A margin inside the element</p>
+    </div>
+    <div class="clear-float"></div>
+    <hr />
   </body>
 </html>
