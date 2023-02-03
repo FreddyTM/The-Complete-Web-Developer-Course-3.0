@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--htmlcolorcodes.com-->
     <!--Google extension: colorzilla. Pick colors from any website-->
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
     <style type="text/css">
       /*       p {
         color: red;
@@ -16,21 +20,6 @@
         color: pink;
         font-size: 150%;
       } */
-      #square-red {
-        background-color: red;
-        border: 10px black solid;
-      }
-      #square-green {
-        background-color: green;
-        border: 15px;
-        border-style: ridge solid dotted dashed;
-        border-color: red magenta cadetblue gold;
-      }
-      #square-blue {
-        background-color: blue;
-        /* Rounded rectangles. Can use pixels or percentages. A 50% border-radius is a circle*/
-        border-radius: 20px;
-      }
       .square {
         width: 200px;
         height: 200px;
@@ -107,6 +96,13 @@
       .clear-float {
         clear: both;
       }
+      .fonts {
+        font-size: 200%;
+        /*fallback fonts, a list of fonts of the same family to use if the chosen font is missing*/
+        /* font-family: Arial, Helvetica, sans-serif; */
+        /*You can also use fonts from Google Fonts, putting the link in the head section*/
+        font-family: 'Itim', cursive;
+      }
       #green {
         color: green;
       }
@@ -120,6 +116,21 @@
         background-color: #d6eaf8;
         width: 200px;
         float: right;
+      }
+      #square-red {
+        background-color: red;
+        border: 10px black solid;
+      }
+      #square-green {
+        background-color: green;
+        border: 15px;
+        border-style: ridge solid dotted dashed;
+        border-color: red magenta cadetblue gold;
+      }
+      #square-blue {
+        background-color: blue;
+        /* Rounded rectangles. Can use pixels or percentages. A 50% border-radius is a circle*/
+        border-radius: 20px;
       }
     </style>
   </head>
@@ -192,5 +203,8 @@
     <div id="square-red" class="square"></div>
     <div id="square-green" class="square"></div>
     <div id="square-blue" class="square"></div>
+    <div class="clear-float"></div>
+    <hr />
+    <p class="fonts">This is some text!</p>
   </body>
 </html>
