@@ -103,6 +103,25 @@
         /*You can also use fonts from Google Fonts, putting the link in the head section*/
         font-family: 'Itim', cursive;
       }
+      .fonts2 {
+        font-size: 200%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .fontbold {
+        font-weight: bold;
+      }
+      .fontitalic {
+        font-style: italic;
+      }
+      .underlined {
+        text-decoration: underline;
+      }
+      .notunderlined {
+        text-decoration: none;
+      }
+      .big {
+        font-size: 250%;
+      }
       #green {
         color: green;
       }
@@ -131,6 +150,10 @@
         background-color: blue;
         /* Rounded rectangles. Can use pixels or percentages. A 50% border-radius is a circle*/
         border-radius: 20px;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: green;
       }
     </style>
   </head>
@@ -205,6 +228,13 @@
     <div id="square-blue" class="square"></div>
     <div class="clear-float"></div>
     <hr />
-    <p class="fonts">This is some text!</p>
+    <p class="fonts fontbold">This is some text!</p>
+    <p class="fonts2 fontitalic">This is some more text!</p>
+    <p class="fontbold">This text combines bold &amp <span class="fontitalic">italic</span></p>
+    <p class="underlined">This is underlined text</p>
+    <a href="">This is an underlined link</a>
+    <p><a href="" class="notunderlined">This is also a link, but it's not underlined</a></p>
+    <p class="big">Very big text!</p>
+    <hr />
   </body>
 </html>
