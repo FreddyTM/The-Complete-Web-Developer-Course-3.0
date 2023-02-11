@@ -170,6 +170,16 @@
         /* Rounded rectangles. Can use pixels or percentages. A 50% border-radius is a circle*/
         border-radius: 20px;
       }
+      #gradient {
+        width: 500px;
+        height: 200px;
+        background: linear-gradient(to right, white, red, blue);
+      }
+      #radial {
+        width: 500px;
+        height: 200px;
+        background: radial-gradient(yellow, orange, red);
+      }
       a:hover {
         text-decoration: underline;
         color: darkred;
@@ -359,5 +369,12 @@
         </tr>
       </tbody>
     </table>
+    <hr />
+    <div id="gradient">
+      <h1>This is a gradient</h1>
+    </div>
+    <div id="radial">
+      <h1>This is a gradient</h1>
+    </div>
   </body>
 </html>
