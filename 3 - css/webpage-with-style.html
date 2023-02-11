@@ -87,6 +87,9 @@
         box-sizing: border-box;
         float: left;
       }
+      .green {
+        color: green;
+      }
       .large {
         font-size: 200%;
       }
@@ -138,6 +141,9 @@
       #green {
         color: green;
       }
+      #blue {
+        color: darkblue;
+      }
       #first-section {
         color: blue;
         background-color: #ffa07a;
@@ -169,7 +175,32 @@
         color: darkred;
       }
       a:visited {
-        color: green;
+        color: red;
+      }
+      div p {
+        font-weight: bold;
+      }
+      /*pargraphs that are siblings of an h3 will be underlined*/
+      h3 ~ p {
+        text-decoration: underline;
+      }
+      /*paragraphs following an h3 element will have a 150% size*/
+      h3 + p {
+        font-size: 150%;
+      }
+      /*links with certain attributes will have a particular color*/
+      a[target] {
+        color: rgb(109, 9, 39);
+      }
+      /*links that point to a particular address*/
+      /* *= will track any link that contains the address inside the href attribute*/
+      /* ^= will track any link that begins with the address inside the href attribute*/
+      /* $= will track any link that ends with the address inside the href attribute*/
+      /* ~= will track any link that has the value between two spaces*/
+      /* |= will track any link that has the value separated by hyphens (-)*/
+      a[href="http://www.google.com"]
+      {
+        font-size: 150%;
       }
     </style>
   </head>
@@ -268,5 +299,18 @@
         >This is a link to Google that opens in a new tab</a
       >
     </p>
+    <hr />
+    <h1>I am a heading</h1>
+    <div>
+      <h3>I'm an h3 element</h3>
+      <p class="green">I am a paragraph</p>
+      <p>I am a paragraph inside the div</p>
+      <a id="blue" href="">I am a link</a>
+    </div>
+    <p>I am a paragraph outside the div</p>
+    <div>
+      <h3>Hello!</h3>
+      <p>I'm a paragraph in another div</p>
+    </div>
   </body>
 </html>
