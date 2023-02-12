@@ -138,6 +138,18 @@
         width: 300px;
         background-color: darkorange;
       }
+      .shadow {
+        text-shadow: 2px 2px 4px black;
+      }
+      .glow {
+        text-shadow: 0 0 5px red;
+      }
+      .shadowbox {
+        width: 200px;
+        height: 200px;
+        background-color: aliceblue;
+        box-shadow: 6px 6px 10px;
+      }
       #green {
         color: green;
       }
@@ -376,5 +388,9 @@
     <div id="radial">
       <h1>This is a gradient</h1>
     </div>
+    <hr />
+    <h2 class="shadow">This text will have a shadow</h2>
+    <h2 class="glow">This text will glow with a shadow with no offset</h2>
+    <div class="shadowbox"></div>
   </body>
 </html>
