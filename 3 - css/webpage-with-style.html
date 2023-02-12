@@ -181,6 +181,20 @@
       .box5:hover {
         transform: rotateX(180deg);
       }
+      .flexbox-container {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-color: aqua;
+        flex-direction: row-reverse;
+        /*flex-wrap: wrap; -- to wrap items inside the div. If they don't fit in one row they jump to the next instead of stretching*/
+      }
+      .flexbox-item {
+        background-color: bisque;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
       #green {
         color: green;
       }
@@ -433,5 +447,15 @@
     <div class="box4"></div>
     <hr />
     <div class="box5">Box</div>
+    <hr />
+    <div class="flexbox-container">
+      <div class="flexbox-item">Item 1</div>
+      <div class="flexbox-item">Item 2</div>
+      <div class="flexbox-item">Item 3</div>
+      <div class="flexbox-item">Item 4</div>
+      <div class="flexbox-item">Item 5</div>
+      <div class="flexbox-item">Item 6</div>
+      <div class="flexbox-item">Item 7</div>
+    </div>
   </body>
 </html>
