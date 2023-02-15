@@ -31,15 +31,35 @@
       .infoblock {
         background-color: #9727e7;
       }
+      .block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
       .hi-block {
-        padding: 100px 0 50px 0;
+        padding: 120px 0 0 0;
+      }
+      .about-block {
+        padding: 80px 375px 80px 375px;
+      }
+      .about-card {
+        background-color: white;
+        height: 700px;
+        max-width: 1500px;
+        margin: auto;
       }
       .roundimage {
         display: block;
         margin-left: auto;
         margin-right: auto;
         border-radius: 50%;
-        width: 40%;
+        width: 80%;
+      }
+      .textcenter {
+        text-align: center;
+      }
+      .about-card {
+        box-shadow: 10px 10px #5e0f97, -10px -10px salmon;
       }
     </style>
   </head>
@@ -50,9 +70,12 @@
       <a class="whitelink" href="">CONTACT ME</a>
     </div>
     <div class="infoblock">
-      <div class="hi-block">
+      <div class="block hi-block">
         <p><img class="roundimage" src="images/rob.jpeg" /></p>
-        <h2>Hi! I'm Rob! I teach people how to code and make websites.</h2>
+      </div>
+      <h1 class="textcenter">Hi! I'm Rob! I teach people how to code and make websites.</h1>
+      <div class="about-block">
+        <div class="block about-card"></div>
       </div>
     </div>
   </body>
