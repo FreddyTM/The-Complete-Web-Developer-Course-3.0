@@ -24,11 +24,14 @@
         color: white;
       }
       /* Info block */
-      h1,
-      h2 {
+      h2,
+      h3 {
         font-family: 'Arial black', sans-serif;
       }
-      .infoblock {
+      .textcenter {
+        text-align: center;
+      }
+      .info-block {
         background-color: #9727e7;
       }
       .block {
@@ -37,29 +40,38 @@
         justify-content: center;
       }
       .hi-block {
-        padding: 120px 0 0 0;
+        padding: 110px 0 0 0;
       }
       .about-block {
-        padding: 80px 375px 80px 375px;
+        padding: 60px;
       }
       .about-card {
         background-color: white;
-        height: 700px;
-        max-width: 1500px;
-        margin: auto;
+        height: 610px;
+        min-width: 800px;
+        max-width: 1200px;
+        position: relative;
+        margin: 0 auto;
+        padding: 0 100px 30px 100px;
+        box-shadow: 10px 10px #5e0f97, -10px -10px salmon;
       }
-      .roundimage {
+      .round-image {
         display: block;
         margin-left: auto;
         margin-right: auto;
         border-radius: 50%;
-        width: 80%;
+        width: 70%;
       }
-      .textcenter {
-        text-align: center;
+      .about-image {
+        height: 450px;
+        margin-right: 50px;
+        float: left;
       }
-      .about-card {
-        box-shadow: 10px 10px #5e0f97, -10px -10px salmon;
+      .about-header {
+        padding: 50px 0 20px 0;
+      }
+      .about-text {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
     </style>
   </head>
@@ -69,13 +81,27 @@
       <a class="whitelink" href="">PROJECTS</a>
       <a class="whitelink" href="">CONTACT ME</a>
     </div>
-    <div class="infoblock">
+    <div class="info-block">
       <div class="block hi-block">
-        <p><img class="roundimage" src="images/rob.jpeg" /></p>
+        <p><img class="round-image" src="images/rob.jpeg" /></p>
       </div>
-      <h1 class="textcenter">Hi! I'm Rob! I teach people how to code and make websites.</h1>
+      <h2 class="textcenter">Hi! I'm Rob! I teach people how to code and make websites.</h2>
       <div class="about-block">
-        <div class="block about-card"></div>
+        <div class="about-card">
+          <h2 class="textcenter about-header">About me</h2>
+          <div class="block">
+            <img class="about-image" src="images/rob-aboutme.jpeg" />
+            <p class="about-text">
+              Almost a decade ago I was busy teaching math to teenagers at three schools in London and Cambridge. Since
+              I’m a bit of a coding geek, I also built websites on the side for friends and family. I soon learned that
+              web development was a very lucrative career choice, so I gave up my successful (and sometimes stressful)
+              job as a teacher to build websites. Today, I couldn’t be happier with that decision.<br /><br />After
+              building websites for about seven years, I noticed a lot of people struggling to learn how to code. I
+              wanted others to have the same freedoms that I enjoyed, so I started teaching web development<br /><br />I'm
+              familiar with HTML5, CSS3, JavaScript, PHP7 and MySQL. Checkout some of the projects I've done below.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
