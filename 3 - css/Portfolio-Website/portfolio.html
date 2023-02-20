@@ -171,9 +171,9 @@
       }
       .right-form-field {
         height: 275px;
+        width: 650px;
         resize: both;
         overflow: auto;
-        text;
       }
       .field {
         font-size: 105%;
@@ -242,7 +242,7 @@
         <h2 class="contact-header textcenter">Contact</h2>
         <p class="contact-text textcenter">Use this form to get in touch. I would love to hear from you!</p>
         <div class="contact-form">
-          <form class="contact-form">
+          <form class="contact-form" id="contact">
             <div class="left-form">
               <p class="contact-text">Name</p>
               <input type="text" class="field left-form-field" id="name" placeholder="Your name" />
@@ -253,7 +253,7 @@
             </div>
             <div class="right-form">
               <p class="contact-text">Message</p>
-              <input type="text" class="field right-form-field" id="message" />
+              <textarea form="contact" class="field right-form-field" name="message"></textarea>
             </div>
           </form>
         </div>
