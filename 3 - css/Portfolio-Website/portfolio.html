@@ -202,6 +202,7 @@
       }
       /*Footer block*/
       .footer-block {
+        display: flex;
         background-color: #1f2027;
         height: 90px;
       }
@@ -209,6 +210,21 @@
         font-size: 105%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
+      }
+      .fa-square-facebook,
+      .fa-twitter {
+        font-size: 190%;
+        margin-left: 10px;
+      }
+      .fa-square-facebook:hover,
+      .fa-twitter:hover {
+        color: lightblue;
+      }
+      .left-data {
+        text-align: left;
+      }
+      .right-data {
+        text-align: right;
       }
     </style>
   </head>
@@ -297,10 +313,12 @@
         </table>
       </div>
       <div class="footer-block">
-        <table class="block">
+        <table>
           <tr>
-            <td class="footer-item">This site © 2022 Rob Percival</td>
-            <td></td>
+            <td class="footer-item left-data">This site © 2022 Rob Percival</td>
+            <td class="footer-item right-data">
+              <i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-twitter"></i>
+            </td>
           </tr>
         </table>
       </div>
