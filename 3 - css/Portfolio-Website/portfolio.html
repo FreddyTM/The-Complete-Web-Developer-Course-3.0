@@ -11,17 +11,22 @@
       h3 {
         font-family: 'Arial black', sans-serif;
       }
-      .textcenter {
-        text-align: center;
+      .block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .info-block,
       .projects-block {
         background-color: #9727e7;
       }
-      .block {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .contact-block {
+        background-color: #3d366f;
+        position: relative;
+        z-index: 3;
+      }
+      .textcenter {
+        text-align: center;
       }
       .clear-float {
         clear: both;
@@ -100,19 +105,19 @@
       .earth-bbc-card {
         background-color: white;
         width: 340px;
-        height: 175px;
+        height: 150px;
         position: relative;
         z-index: 1;
         left: 10px;
         top: -80px;
         padding: 5px 30px;
         text-align: center;
-        transition: 0.2s ease-in-out;
+        transition: 0.25s ease-in-out;
       }
       .projects-bottom {
         position: relative;
         background-color: #9727e7;
-        height: 125px;
+        height: 80px;
         width: auto;
         z-index: 2;
       }
@@ -127,8 +132,20 @@
         cursor: pointer;
       }
       .earth-bbc-card:hover {
-        top: -175px;
+        top: -170px;
         transform: translateY();
+      }
+      /*contact-block*/
+      .contact-header {
+        color: white;
+      }
+      .contact-block {
+        padding: 70px 20px 40px 20px;
+      }
+      .contact-text {
+        font-size: 105%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
       }
     </style>
   </head>
@@ -186,6 +203,10 @@
         </div>
         <div class="projects-bottom"></div>
         <!--         <div class="clear-float"></div> -->
+      </div>
+      <div class="contact-block">
+        <h2 class="contact-header textcenter">Contact</h2>
+        <p class="contact-text textcenter">Use this form to get in touch. I would love to hear from you!</p>
       </div>
     </div>
   </body>
