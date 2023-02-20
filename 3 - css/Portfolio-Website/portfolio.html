@@ -139,6 +139,9 @@
       .contact-header {
         color: white;
       }
+      .contact-form {
+        background-color: #3d366f;
+      }
       .contact-block {
         padding: 70px 20px 40px 20px;
       }
@@ -146,6 +149,37 @@
         font-size: 105%;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
+      }
+      p.contact-text {
+        margin-bottom: 10px;
+      }
+      .contact-form {
+        display: flex;
+        align-items: top;
+        justify-content: center;
+        margin-top: 15px;
+      }
+      .left-form {
+        background-color: #3d366f;
+        margin-right: 50px;
+      }
+      .left-form-field {
+        height: 35px;
+        width: 330px;
+        min-width: 200px;
+        padding: 7px 20px;
+      }
+      .right-form-field {
+        height: 275px;
+        resize: both;
+        overflow: auto;
+        text;
+      }
+      .field {
+        font-size: 105%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 5px;
+        border: none;
       }
     </style>
   </head>
@@ -207,6 +241,22 @@
       <div class="contact-block">
         <h2 class="contact-header textcenter">Contact</h2>
         <p class="contact-text textcenter">Use this form to get in touch. I would love to hear from you!</p>
+        <div class="contact-form">
+          <form class="contact-form">
+            <div class="left-form">
+              <p class="contact-text">Name</p>
+              <input type="text" class="field left-form-field" id="name" placeholder="Your name" />
+              <p class="contact-text">Subject</p>
+              <input type="text" class="field left-form-field" id="subject" placeholder="Reason for your message" />
+              <p class="contact-text">Email address</p>
+              <input type="text" class="field left-form-field" id="email" placeholder="Your email address" />
+            </div>
+            <div class="right-form">
+              <p class="contact-text">Message</p>
+              <input type="text" class="field right-form-field" id="message" />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
