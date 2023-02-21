@@ -203,6 +203,7 @@
       /*Footer block*/
       .footer-block {
         display: flex;
+        flex-wrap: nowrap;
         background-color: #1f2027;
         height: 90px;
       }
@@ -224,22 +225,26 @@
         text-align: left;
       }
       .right-data {
-        text-align: right;
+        /* text-align: right; */
+        margin-left: 800px;
+      }
+      p.footer-item {
+        white-space: nowrap;
       }
     </style>
   </head>
   <body>
     <div class="menu">
-      <a class="whitelink" href="">ABOUT ME</a>
-      <a class="whitelink" href="">PROJECTS</a>
-      <a class="whitelink" href="">CONTACT ME</a>
+      <a class="whitelink" href="#about-block">ABOUT ME</a>
+      <a class="whitelink" href="#projects-block">PROJECTS</a>
+      <a class="whitelink" href="#contact-block">CONTACT ME</a>
     </div>
     <div class="info-block">
       <div class="block hi-block">
         <p><img class="round-image" src="images/rob.jpeg" /></p>
       </div>
       <h2 class="textcenter">Hi! I'm Rob! I teach people how to code and make websites.</h2>
-      <div class="about-block">
+      <div class="about-block" id="about-block">
         <div class="about-card">
           <h2 class="textcenter about-header">About me</h2>
           <div class="block">
@@ -256,7 +261,7 @@
           </div>
         </div>
       </div>
-      <div class="projects-block">
+      <div class="projects-block" id="projects-block">
         <h2 class="textcenter projects-header">Projects</h2>
         <div class="projects-contents block">
           <div class="projects-image">
@@ -283,7 +288,7 @@
         <div class="projects-bottom"></div>
         <!--         <div class="clear-float"></div> -->
       </div>
-      <div class="contact-block">
+      <div class="contact-block" id="contact-block">
         <h2 class="contact-header textcenter">Contact</h2>
         <p class="contact-text textcenter">Use this form to get in touch. I would love to hear from you!</p>
         <table class="block">
@@ -312,15 +317,19 @@
           </tr>
         </table>
       </div>
-      <div class="footer-block">
-        <table>
+      <div class="footer-block block">
+        <p class="footer-item">This site © 2022 Rob Percival</p>
+        <p class="footer-item right-data">
+          <i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-twitter"></i>
+        </p>
+        <!--         <table>
           <tr>
-            <td class="footer-item left-data">This site © 2022 Rob Percival</td>
+            <td class="footer-item left-data" colspan="150">This site © 2022 Rob Percival</td>
             <td class="footer-item right-data">
               <i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-twitter"></i>
             </td>
           </tr>
-        </table>
+        </table> -->
       </div>
     </div>
   </body>
